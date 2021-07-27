@@ -4,13 +4,15 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+
+
 public class Contract {
 	
 	private Integer number;
 	private Date date;
 	private Double totalValue;
 	
-	List<Installment> installments = new ArrayList<>();
+	List<Installment> installment = new ArrayList<>();
 	
 	public Contract() {
 	}
@@ -45,8 +47,8 @@ public class Contract {
 		this.totalValue = totalValue;
 	}
 
-	public List<Installment> setInstalmments() {
-		return installments;
+	public List<Installment> getInstallment() {
+		return installment;
 	}
-	
+
 }
